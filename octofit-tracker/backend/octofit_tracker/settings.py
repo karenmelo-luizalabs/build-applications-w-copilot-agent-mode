@@ -11,7 +11,11 @@ SECRET_KEY = 'django-insecure-dh4&1+ex9)7fc_ubh!-8nc%2vbxa0=sj-hi0n&st6byit5@2j-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    os.environ.get('CODESPACE_NAME') + '-8000.app.github.dev' if os.environ.get('CODESPACE_NAME') else '',
+]
 
 # Application definition
 
@@ -28,6 +32,7 @@ INSTALLED_APPS = [
     'corsheaders',
     
     # Suas Apps locais (adicione aqui após criá-las com startapp)
+    'octofit_tracker',
     # 'usuarios',
     # 'treinos',
 ]

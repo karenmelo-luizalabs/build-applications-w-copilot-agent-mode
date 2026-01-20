@@ -1,0 +1,93 @@
+/* Custom styles for Octofit Tracker */
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+}
+
+/* Navigation */
+.navbar-dark.bg-dark {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #00f2fe !important;
+}
+
+/* Headings */
+h1 {
+  color: #4facfe;
+  font-weight: bold;
+}
+
+/* Tables */
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.table thead th {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+  border: none;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00f2fe;
+  text-decoration: underline;
+}
+
+/* Alerts */
+.alert-danger {
+  background: #ffe6e6;
+  color: #d9534f;
+  border: 1px solid #d9534f;
+}
+
+/* Spinners */
+.spinner-border {
+  color: #4facfe;
+}
